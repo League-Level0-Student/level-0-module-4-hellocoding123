@@ -5,10 +5,14 @@ public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
-
+		String string = "a c f";
+		System.out.println(string.charAt(2));
+		System.out.println(string.length());
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-
+		for(int i = 0; i < string.length(); i++) {
+			System.out.println(string.charAt(i));			
+		}
 		
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()

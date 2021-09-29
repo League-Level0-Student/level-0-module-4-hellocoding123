@@ -12,14 +12,22 @@ void setup() {
   PImage waldo = loadImage("waldo.jpg"); // Change this to match your file name.
   size(600, 400); 
   // Resize your waldo picture to the same size as the sketch
-  
+  waldo.resize(600,400);
   // Make the waldo image your sketch background
-
+  background(waldo);
 }
 
 void draw() {
 
-      // If the user presses the mouse .......
+      if (mousePressed) {
+        println("X: " + mouseX + " Y: " + mouseY);
+        if (mouseX > 375 && mouseY > 199 && mouseX < 418 && mouseY < 278) {
+          textSize(50);
+          text("Waldo Was Found!", 100, 200);
+        }
+      }
+      
+      // If the user presses the mouse 
   
           // Use this print statement to help you find the location of Waldo to use in the code below
           // println("X: " + mouseX + " Y: " + mouseY); 
