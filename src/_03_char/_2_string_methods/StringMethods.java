@@ -20,7 +20,11 @@ public class StringMethods {
 		
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
-
+		for(int i = 0; i < string.length(); i++) {
+			if(string.charAt(i) == 'c') {
+				System.out.println("c is at index " + i);
+			}
+		}
 		
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
